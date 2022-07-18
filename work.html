@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/hamburgers.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -11,16 +12,24 @@
     <nav class="navigation navigation__work">
       <ul>
         <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
           <a class="active" href="#">Works</a>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <a href="blog.html">Blog</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="works.html">Info</a>
         </li>
       </ul>
     </nav>
+    <button class="hamburger hamburger--collapse" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
     <main class="main">
       <div class="main__white">
         <div class="container">
@@ -32,10 +41,12 @@
               alt=""
             />
             <div class="white__block__info">
-              <h2>Designing Dashboards</h2>
+              <h2>
+                <a class="block__info__title" href="">Designing Dashboards</a>
+              </h2>
               <div class="block__info__data">
                 <div class="data__year">2020</div>
-                <p class="data__text">Dashboard</p>
+                <a href="" class="data__link">Dashboard</a>
               </div>
               <p class="block__info__text">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -51,10 +62,14 @@
               alt=""
             />
             <div class="white__block__info">
-              <h2>Vibrant Portraits of 2020</h2>
+              <h2>
+                <a class="block__info__title" href=""
+                  >Vibrant Portraits of 2020</a
+                >
+              </h2>
               <div class="block__info__data">
                 <div class="data__year">2018</div>
-                <p class="data__text">Illustration</p>
+                <a href="" class="data__link">Illustration</a>
               </div>
               <p class="block__info__text">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -70,10 +85,32 @@
               alt=""
             />
             <div class="white__block__info">
-              <h2>36 Days of Malayalam type</h2>
+              <h2>
+                <a class="block__info__title" href=""
+                  >36 Days of Malayalam type</a
+                >
+              </h2>
               <div class="block__info__data">
                 <div class="data__year">2018</div>
-                <p class="data__text">Typography</p>
+                <a href="" class="data__link">Typography</a>
+              </div>
+              <p class="block__info__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div class="white__block">
+            <img class="white__block__img" src="img/Components.png" alt="" />
+            <div class="white__block__info">
+              <h2>
+                <a class="block__info__title" href="">Components</a>
+              </h2>
+              <div class="block__info__data">
+                <div class="data__year">2018</div>
+                <a href="" class="data__link">Components,</a>
+                <a href="" class="data__link"> Design</a>
               </div>
               <p class="block__info__text">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -88,13 +125,14 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__link">
-          <img src="img/fb.png" alt="" />
-          <img src="img/insta.png" alt="" />
-          <img src="img/Group.png" alt="" />
-          <img src="img/Linkedin.png" alt="" />
+          <a href=""><img src="img/fb.svg" alt="" /></a>
+          <a href=""><img src="img/insta.svg" alt="" /></a>
+          <a href=""><img src="img/Group.svg" alt="" /></a>
+          <a href=""><img src="img/Linkedin.svg" alt="" /></a>
         </div>
         <div class="footer__info">Copyright ©2020 All rights reserved</div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

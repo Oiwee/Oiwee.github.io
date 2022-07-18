@@ -98,7 +98,7 @@ a {
 }
 
 .main {
-  margin: 71px 0 32px;
+  padding: 70px 0 0;
 }
 
 .main__blue {
@@ -273,6 +273,47 @@ a {
   color: #8695a4;
 }
 
+.main__info {
+  padding: 80px 0 0;
+}
+
+.main__info__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 50px;
+}
+
+.info__img {
+  padding: 40px 0 50px;
+}
+
+.info__heading_one {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.info__heading_two {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 60px;
+}
+
+.info__img__headingone {
+  padding: 30px 0;
+}
+
+.footer svg {
+  width: 30px;
+  height: 30px;
+  fill: #21243d;
+  transition: fill 0.3s ease-in-out;
+}
+
+.footer a:hover svg {
+  fill: #ff6464;
+}
+
 @media (max-width: 767px) {
   .white__block {
     flex-wrap: wrap;
@@ -331,10 +372,30 @@ a {
     width: 80%;
     transform: translateX(-150vw);
     transition: all 0.5s ease-in-out;
+    display: flex;
+    padding-top: 10px;
   }
 
   .navigation.open {
     transform: translateX(0);
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .navigation ul li:nth-last-child(n + 1) {
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .navigation ul li a {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
   }
 
   .header .container {
@@ -356,6 +417,46 @@ a {
   .block {
     flex-wrap: wrap;
   }
+
+  .main {
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  .main__title {
+    margin: 10px 0 0;
+  }
+
+  .subtitle__work {
+    text-align: start;
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .block__info__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .data__link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .data__year {
+    font-size: 16px;
+  }
+
+  .info__img {
+    width: 100%;
+  }
+
+  .info__img__headingone {
+    width: 100%;
+  }
+  .info__img__headingtwo {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -367,5 +468,27 @@ a {
   }
   .subtitle {
     font-size: 18px;
+  }
+  .main__title {
+    margin: 30px 0 30px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 20px;
+  }
+  .main__title {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 20px;
+  }
+  .container__blog {
+    max-width: 100%;
+  }
+  .main__ui {
+    padding: 15px 0;
+  }
+  .main__ui__title {
+    font-size: 22px;
+    line-height: 24px;
   }
 }

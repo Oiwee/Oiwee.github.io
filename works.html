@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/hamburgers.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -11,90 +12,67 @@
     <nav class="navigation navigation__work">
       <ul>
         <li>
-          <a href="#">Works</a>
+          <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <a href="work.html">Works</a>
         </li>
         <li>
-          <a class="active" href="#">Contact</a>
+          <a href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a class="active" href="#">Info</a>
         </li>
       </ul>
     </nav>
-    <main class="main">
-      <div class="main__white">
-        <div class="container">
-          <p class="subtitle subtitle__work">Works</p>
-          <div class="white__block">
-            <img
-              class="white__block__img"
-              src="img/Designing Dashboards.png"
-              alt=""
-            />
-            <div class="white__block__info">
-              <h2>Designing Dashboards</h2>
-              <div class="block__info__data">
-                <div class="data__year">2020</div>
-                <p class="data__text">Dashboard</p>
-              </div>
-              <p class="block__info__text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </div>
-          <div class="white__block">
-            <img
-              class="white__block__img"
-              src="img/Vibrant Portraits of 2020.png"
-              alt=""
-            />
-            <div class="white__block__info">
-              <h2>Vibrant Portraits of 2020</h2>
-              <div class="block__info__data">
-                <div class="data__year">2018</div>
-                <p class="data__text">Illustration</p>
-              </div>
-              <p class="block__info__text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </div>
-          <div class="white__block">
-            <img
-              class="white__block__img"
-              src="img/36 Days of Malayalam type.png"
-              alt=""
-            />
-            <div class="white__block__info">
-              <h2>36 Days of Malayalam type</h2>
-              <div class="block__info__data">
-                <div class="data__year">2018</div>
-                <p class="data__text">Typography</p>
-              </div>
-              <p class="block__info__text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </div>
+    <button class="hamburger hamburger--collapse" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <div class="container__blog">
+      <main class="main__info">
+        <h2 class="main__info__title">
+          Designing Dashboards with <br />
+          usability in mind
+        </h2>
+        <div class="block__info__data">
+          <div class="data__year">2020</div>
+          <a href="" class="data__link">Dashboard,</a>
+          <a href="" class="data__link">User Experience Design</a>
         </div>
-      </div>
-    </main>
+        <p class="block__info__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <img
+          class="info__img"
+          src="img/Designing Dashboards with usability in mind.png"
+          alt=""
+        />
+        <p class="info__heading_one">Heading 1</p>
+        <p class="info__heading_two">Heading 2</p>
+        <p class="info__heading__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <img class="info__img__headingone" src="img/headingone.png" alt="" />
+        <img class="info__img__headingtwo" src="img/headingtwo.png" alt="" />
+      </main>
+    </div>
     <footer class="footer">
-      <div class="container">
+      <div class="container__blog">
         <div class="footer__link">
-          <img src="img/fb.png" alt="" />
-          <img src="img/insta.png" alt="" />
-          <img src="img/Group.png" alt="" />
-          <img src="img/Linkedin.png" alt="" />
+          <a href=""><img src="img/fb.svg" alt="" /></a>
+          <a href=""><img src="img/insta.svg" alt="" /></a>
+          <a href=""><img src="img/Group.svg" alt="" /></a>
+          <a href=""><img src="img/Linkedin.svg" alt="" /></a>
         </div>
         <div class="footer__info">Copyright ©2020 All rights reserved</div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
